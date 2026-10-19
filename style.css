@@ -1,0 +1,249 @@
+/* --- TEMA WARNA HITAM & MERAH (DARK RED ELEGANT) --- */
+:root {
+    --bg-color: #0d0d0d;
+    --card-bg: #161616;
+    --primary-red: #e50914; /* Crimson Red */
+    --hover-red: #b20710;
+    --text-main: #f5f5f5;
+    --text-muted: #a3a3a3;
+    --border-color: #262626;
+    --code-bg: #050505;
+    --code-text: #ff4d4d;
+    --shadow: 0 4px 20px rgba(229, 9, 20, 0.15);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* --- CARD STYLING --- */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 28px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    border-color: rgba(229, 9, 20, 0.4);
+    box-shadow: var(--shadow);
+}
+
+/* --- HEADER STYLING --- */
+.header-card {
+    border-top: 4px solid var(--primary-red);
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgba(229, 9, 20, 0.15);
+    color: var(--primary-red);
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 4px 14px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-red);
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+h2 {
+    color: var(--primary-red);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.author-tag {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+    padding: 6px 14px;
+    background: #202020;
+    display: inline-block;
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-red);
+}
+
+.meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    background-color: #0a0a0a;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    border: 1px solid #1f1f1f;
+}
+
+/* --- FORM & INPUT --- */
+h3 {
+    color: var(--primary-red);
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text-main);
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #0a0a0a;
+    transition: all 0.2s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-red);
+    box-shadow: 0 0 8px rgba(229, 9, 20, 0.4);
+}
+
+.filled-input {
+    color: #ff9999 !important;
+    background-color: #121212 !important;
+}
+
+.styled-list {
+    padding-left: 20px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* --- CODE BOX & BUTTONS --- */
+.code-box {
+    background-color: var(--code-bg);
+    color: var(--code-text);
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    border: 1px solid #331010;
+}
+
+.btn {
+    background-color: var(--primary-red);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--hover-red);
+    box-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+}
+
+.console-output {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #080808;
+    border-left: 4px solid var(--primary-red);
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #00ff66;
+}
+
+/* --- TABLES --- */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.custom-table th, .custom-table td {
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #1a0505;
+    color: var(--primary-red);
+}
+
+.badge-type {
+    font-family: monospace;
+    padding: 2px 8px;
+    background: #2a0808;
+    color: var(--primary-red);
+    border-radius: 4px;
+    font-weight: 600;
+    border: 1px solid var(--primary-red);
+}
+
+.result-card {
+    margin-top: 15px;
+    padding: 14px;
+    background-color: rgba(229, 9, 20, 0.1);
+    border: 1px dashed var(--primary-red);
+    border-radius: 8px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
